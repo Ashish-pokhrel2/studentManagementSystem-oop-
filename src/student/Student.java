@@ -1,4 +1,4 @@
-package Student;
+package student;
 
 public class Student {
     private int studentId;
@@ -6,7 +6,6 @@ public class Student {
     private String rollNo;
     private String email;
 
-    // Constructor
     public Student(int studentId, String name, String rollNo, String email) {
         this.studentId = studentId;
         this.name = name;
@@ -14,7 +13,6 @@ public class Student {
         this.email = email;
     }
 
-    // Getters & Setters
     public int getStudentId() { return studentId; }
     public String getName() { return name; }
     public String getRollNo() { return rollNo; }

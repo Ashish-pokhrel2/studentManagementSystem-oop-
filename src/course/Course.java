@@ -15,6 +15,11 @@ public class Course {
     public String getCourseName() { return courseName; }
     public int getCredits() { return credits; }
 
-    public void setCourseName(String courseName) { this.courseName = courseName; }
-    public void setCredits(int credits) { this.credits = credits; }
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void setCredits(int credits) {
+        this.credits = credits;
+    }
 }

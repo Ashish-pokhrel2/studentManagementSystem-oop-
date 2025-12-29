@@ -5,12 +5,12 @@ import java.util.*;
 
 public class EnrollmentDAO {
 
-    // studentId → list of courses
+    // studentId -> list of courses
     private Map<Integer, List<Course>> enrollments = new HashMap<>();
 
-    public boolean enrollStudent(int studentId, int courseId, Course course) {
+    public boolean enrollStudent(int studentId, int courseId) {
         enrollments.putIfAbsent(studentId, new ArrayList<>());
-        return enrollments.get(studentId).add(course);
+        return true;
     }
 
     public boolean removeEnrollment(int studentId, int courseId) {
