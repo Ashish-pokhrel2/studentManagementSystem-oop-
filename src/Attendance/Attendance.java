@@ -4,12 +4,12 @@ package Attendance;
 import java.time.LocalDate;
 
 public class Attendance {
-
     private int attendanceId;
     private int studentId;
     private int courseId;
     private LocalDate date;
-    private String status; // PRESENT or ABSENT
+    private String status;
+
 
     public Attendance() {}
 
@@ -20,28 +20,24 @@ public class Attendance {
         this.status = status;
     }
 
-    // Getters and Setters
-    public int getAttendanceId() {
-        return attendanceId;
-    }
+    public int getAttendanceId() { return attendanceId; }
+    public void setAttendanceId(int attendanceId) { this.attendanceId = attendanceId; }
 
-    public void setAttendanceId(int attendanceId) {
-        this.attendanceId = attendanceId;
-    }
+    public int getStudentId() { return studentId; }
+    public void setStudentId(int studentId) { this.studentId = studentId; }
 
-    public int getStudentId() {
-        return studentId;
-    }
+    public int getCourseId() { return courseId; }
+    public void setCourseId(int courseId) { this.courseId = courseId; }
 
-    public int getCourseId() {
-        return courseId;
-    }
+    public LocalDate getDate() { return date; }
+    public void setDate(LocalDate date) { this.date = date; }
 
-    public LocalDate getDate() {
-        return date;
-    }
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 
-    public String getStatus() {
-        return status;
+    @Override
+    public String toString() {
+        return "Attendance [ID=" + attendanceId + ", Student=" + studentId + 
+               ", Course=" + courseId + ", Date=" + date + ", Status=" + status + "]";
     }
 }
