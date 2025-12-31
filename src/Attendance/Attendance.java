@@ -1,6 +1,5 @@
 package Attendance;
 
-
 import java.time.LocalDate;
 
 public class Attendance {
@@ -9,7 +8,6 @@ public class Attendance {
     private int courseId;
     private LocalDate date;
     private String status;
-
 
     public Attendance() {}
 
@@ -22,22 +20,12 @@ public class Attendance {
 
     public int getAttendanceId() { return attendanceId; }
     public void setAttendanceId(int attendanceId) { this.attendanceId = attendanceId; }
-
     public int getStudentId() { return studentId; }
     public void setStudentId(int studentId) { this.studentId = studentId; }
-
     public int getCourseId() { return courseId; }
     public void setCourseId(int courseId) { this.courseId = courseId; }
-
     public LocalDate getDate() { return date; }
     public void setDate(LocalDate date) { this.date = date; }
-
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
-
-    @Override
-    public String toString() {
-        return "Attendance [ID=" + attendanceId + ", Student=" + studentId + 
-               ", Course=" + courseId + ", Date=" + date + ", Status=" + status + "]";
-    }
 }

@@ -9,4 +9,6 @@ public interface AttendanceDAO {
     List<Attendance> getAttendanceByStudent(int studentId);
     List<Attendance> getAttendanceByCourse(int courseId);
     double calculateAttendancePercentage(int studentId, int courseId);
+    boolean updateAttendanceStatus(int studentId, int courseId, LocalDate date, String newStatus);
+    boolean deleteAttendance(int studentId, int courseId, LocalDate date);
 }
